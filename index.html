@@ -21,13 +21,83 @@
             </nav>
             <div class="header-text">
                 <p>Frontend Developer</p>
-                <h1>Hi, I'm Märta Malm From Sweden</h1>
+                <h1>Hi, I'm <span>Märta</span> Malm <br>From Sweden</h1>
+            </div>
+            <div class="img-container">
+                <img src="background.jpg" alt="background" class="background">
             </div>
         </div>
-        <div class="img-container">
-            <img src="background.jpg" alt="background" class="background">
+    </div>
+
+    <!-- ----------ABOUT-------------- -->
+    <div id="about-me">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="background.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Officia tempore nostrum reprehenderit voluptatum est delectus possimus debitis culpa ipsam molestias. 
+                        Ipsum quaerat veniam debitis et eius sed, nostrum quis reiciendis!</p>
+                    
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programmeringsspråk</span><br>HTML, CSS, JavaScript</li>
+                                <li><span>Ramverk</span><br>Bootstrap</li>
+                                <li><span>Språkkunskaper</span><br>Svenska, Engelska</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Avslutade kurser</span><br>HTML och CSS, Javascript 1</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>EC utbildning</span><br>Frontend Developer</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
         </div>
     </div>
-    
+    <!-- -----------services------------ -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Building websites</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Reprehenderit ratione a nisi dolores, magnam, voluptates et ipsam repellendus, 
+                        sint earum repudiandae voluptatibus quasi eveniet consequuntur!
+                        Soluta veritatis expedita quam facere!</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <h2>Building websites</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Reprehenderit ratione a nisi dolores, magnam, voluptates et ipsam repellendus, 
+                    sint earum repudiandae voluptatibus quasi eveniet consequuntur!
+                    Soluta veritatis expedita quam facere!</p>
+                    <a href="#">Learn more</a>
+            </div>
+            <h2>Building websites</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                Reprehenderit ratione a nisi dolores, magnam, voluptates et ipsam repellendus, 
+                sint earum repudiandae voluptatibus quasi eveniet consequuntur!
+                Soluta veritatis expedita quam facere!</p>
+                <a href="#">Learn more</a>
+        </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
