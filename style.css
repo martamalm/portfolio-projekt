@@ -234,3 +234,24 @@ p{
 .contact-left p{
     margin: 30px;
 }
+.contact-left p i{
+    color: rgb(103, 151, 103);
+    margin-right: 15px;
+    font-size: 1.2rem;
+}
+.social-icons{
+    margin-top: 30px;
+    margin-left: 25px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 2rem;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: rgb(103, 151, 103);
+    transform: translateY(-5px);
+}
