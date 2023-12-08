@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f9980483f4.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
@@ -13,7 +14,6 @@
                 <h1>Märta Malm</h1>
                 <ul>
                     <li> <a href="#">Contact</a></li>
-                    <li> <a href="#">Services</a></li>
                     <li> <a href="#">Portfolio</a></li>
                     <li> <a href="#">About me</a></li>
                     <li> <a href="#">Home</a></li>
@@ -68,36 +68,61 @@
             </div>
         </div>
     </div>
-    <!-- -----------services------------ -->
-    <div id="services">
+    <!-- -----------portfolio------------ -->
+    <div id="portfolio">
         <div class="container">
-            <h1 class="sub-title">My services</h1>
-            <div class="services-list">
-                <div>
-                    <h2>Building websites</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Reprehenderit ratione a nisi dolores, magnam, voluptates et ipsam repellendus, 
-                        sint earum repudiandae voluptatibus quasi eveniet consequuntur!
-                        Soluta veritatis expedita quam facere!</p>
-                        <a href="#">Learn more</a>
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="background.jpg">
+                    <div class="layer">
+                        <h3>Rock Paper Scissors Game</h3>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
                 </div>
-                <h2>Building websites</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Reprehenderit ratione a nisi dolores, magnam, voluptates et ipsam repellendus, 
-                    sint earum repudiandae voluptatibus quasi eveniet consequuntur!
-                    Soluta veritatis expedita quam facere!</p>
-                    <a href="#">Learn more</a>
+                <div class="work">
+                    <img src="background.jpg">
+                    <div class="layer">
+                        <h3>Rock Paper Scissors Game</h3>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="background.jpg">
+                    <div class="layer">
+                        <h3>Rock Paper Scissors Game</h3>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
             </div>
-            <h2>Building websites</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                Reprehenderit ratione a nisi dolores, magnam, voluptates et ipsam repellendus, 
-                sint earum repudiandae voluptatibus quasi eveniet consequuntur!
-                Soluta veritatis expedita quam facere!</p>
-                <a href="#">Learn more</a>
-        </div>
-            </div>
+            <a href="#" class="btn">See more</a>
         </div>
     </div>
+     <!-- -----------------contact---------------- -->
+     <div id="contact">
+        <div class="container">	
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i> marta_malm_97@hotmail.se</p>
+                    <p> <i class="fa-solid fa-square-phone"></i> 073-5450662</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/marta.malm"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/m%C3%A4rta-malm-409a85203/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/dashboard"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+     </div>
     <script src="script.js"></script>
 </body>
 </html>
