@@ -8,7 +8,7 @@
 body{
     background: #080808;
     color: #fff;
-    margin: 0 25px;
+    margin: 0 60px;
 }
 #header{
     width: 100%;
@@ -33,10 +33,13 @@ h1{
 nav h1::first-letter{
     color: rgb(103, 151, 103);
 }
-
-nav li{
-    list-style: none;
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
     float: right;
+} 
+nav li{
     margin: 10px 30px;
 }
 nav li a{
@@ -233,6 +236,10 @@ p{
 }
 .contact-left p{
     margin: 30px;
+    margin-left: 60px;
+}
+.contact-left .btn.btn2{
+    margin-left: 60px;
 }
 .contact-left p i{
     color: rgb(103, 151, 103);
@@ -241,7 +248,7 @@ p{
 }
 .social-icons{
     margin-top: 30px;
-    margin-left: 25px;
+    margin-left: 57px;
 }
 .social-icons a{
     text-decoration: none;
@@ -254,4 +261,69 @@ p{
 .social-icons a:hover{
     color: rgb(103, 151, 103);
     transform: translateY(-5px);
+}
+.btn.btn2{
+    display: inline-block;
+    background: rgb(103, 151, 103);
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 6px;
+}
+form .btn2{
+    padding: 14px 60px;
+    font-size: 1rem;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* ----------CSS for small screens----------- */
+
+nav .fa-solid{
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px){
+    .background{
+    width: 80%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+   .header-text{
+    margin-top: 100%;
+    font-size: 1.2rem;
+}
+
+   .header-text h1{
+    font-size: 2rem;
+}
+   nav .fa-solid{
+    display: block;
+    font-size: 2rem;
+}
+nav ul{
+    background: rgb(103, 151, 103);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+}
+nav ul li{
+    display: block;
+    flex-direction: column;
+}
 }
