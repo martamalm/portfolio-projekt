@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Yeseva+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/f9980483f4.js" crossorigin="anonymous"></script>
 </head>
@@ -11,19 +12,19 @@
     <div id="header">
         <div class="container">
             <nav>
-                <h1>Märta Malm</h1>
-                <ul>
-                    <li> <a href="#">Home</a></li>
-                    <li> <a href="#">About me</a></li>
-                    <li> <a href="#">Portfolio</a></li>
-                    <li> <a href="#">Contact</a></li>
-                    <i class="fa-solid fa-xmark"></i>
+            <h1 class="header-name">Märta Malm</h1>
+                <ul id="sidemenu">
+                    <li> <a href="#header">Home</a></li>
+                    <li> <a href="#about-me">About me</a></li>
+                    <li> <a href="#portfolio">Portfolio</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                    <i class="fas fa-xmark" onclick="closemenu()"></i>
                 </ul>
-                <i class="fa-solid fa-bars"></i>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>Frontend Developer</p>
-                <h1>Hi, I'm <span>Märta</span> Malm <br>From Sweden</h1>
+                <p>Frontend Developer Student</p>
+                <h1>Hi, I'm <span>Märta Malm </span><br>From Sweden</h1>
             </div>
             <div class="img-container">
                 <img src="images/background.jpg" alt="background" class="background">
@@ -36,13 +37,11 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="images/background.jpg">
+                    <img src="images/marta.png">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Officia tempore nostrum reprehenderit voluptatum est delectus possimus debitis culpa ipsam molestias. 
-                        Ipsum quaerat veniam debitis et eius sed, nostrum quis reiciendis!</p>
+                    <p>My name is Märta and I'm studying frontend development.</p>
                     
                         <div class="tab-titles">
                             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -51,14 +50,14 @@
                         </div>
                         <div class="tab-contents active-tab" id="skills">
                             <ul>
-                                <li><span>Programmeringsspråk</span><br>HTML, CSS, JavaScript</li>
-                                <li><span>Ramverk</span><br>Bootstrap</li>
-                                <li><span>Språkkunskaper</span><br>Svenska, Engelska</li>
+                                <li><span>Programmeringsspråk:</span><br>HTML, CSS, JavaScript</li>
+                                <li><span>Ramverk:</span><br>Bootstrap</li>
+                                <li><span>Språkkunskaper:</span><br>Svenska, Engelska</li>
                             </ul>
                         </div>
                         <div class="tab-contents" id="experience">
                             <ul>
-                                <li><span>Avslutade kurser</span><br>HTML och CSS, Javascript 1</li>
+                                <li><span>Avslutade kurser</span><br>HTML, CSS, Javascript 1</li>
                             </ul>
                         </div>
                         <div class="tab-contents" id="education">
@@ -73,27 +72,27 @@
     <!-- -----------portfolio------------ -->
     <div id="portfolio">
         <div class="container">
-            <h1 class="sub-title">My work</h1>
+            <h1 class="sub-title">Projects</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="images/background.jpg">
+                    <img src="images/RPSGame.png">
                     <div class="layer">
                         <h3>Rock Paper Scissors Game</h3>
-                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                        <a href="http://127.0.0.1:5502/inlaemningsuppgift2_js/index.html"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/background.jpg">
+                    <img src="images/Skärmbild 2023-12-12 101342.png">
                     <div class="layer">
-                        <h3>Rock Paper Scissors Game</h3>
-                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                        <h3>Ping Pong Scoore Keeper</h3>
+                        <a href="http://127.0.0.1:5500/index.html"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/background.jpg">
+                    <img src="images/bibliotek.png">
                     <div class="layer">
                         <h3>Rock Paper Scissors Game</h3>
-                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                        <a href="http://127.0.0.1:5502/index.html"><i class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
             </div>
@@ -125,8 +124,10 @@
                 </div>
             </div>
         </div>
+        <button id="scrollToTop"><i class="fas fa-arrow-up"></i></button>
+
         <div class="copyright">
-            <p></p>
+            <p> <i class="fa-solid fa-copyright"></i> 2023</p>
         </div>
      </div>
     <script src="script.js"></script>

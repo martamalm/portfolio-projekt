@@ -4,15 +4,24 @@
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body{
-    background: #080808;
     color: #fff;
-    margin: 0 60px;
+    background-color: black;
+    margin: 0 40px;
 }
 #header{
     width: 100%;
     height: 100vh;
+}
+.header-name{
+    font-family:'Yeseva One', serif;;
+}
+.header-text span{
+    font-family: 'Yeseva One', serif;
+    font-size: 5rem;
 }
 .background{
     width: 30%;
@@ -67,9 +76,40 @@ p{
 .header-text{
     margin-top: 20%;
     font-size: 3rem;
+    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    
+}
+@-webkit-keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  @keyframes text-focus-in {
+    0% {
+      -webkit-filter: blur(12px);
+              filter: blur(12px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-filter: blur(0px);
+              filter: blur(0px);
+      opacity: 1;
+    }
+  }
+  
+.header-text p{
+    font-size: 1.5rem;
 }
 .header-text h1{
-    font-size: 4rem;
+    font-size: 3rem;
     margin-top: 30px;
 }
 .header-text h1 span{
@@ -79,8 +119,7 @@ p{
 /* --------ABOUT----------- */
 
 #about-me{
-    padding: 100px 0;
-    margin-left: 40px;
+    padding: 10px 0;
     color: #ababab;
 }
 .row{
@@ -93,6 +132,7 @@ p{
 }
 .about-col-1 img{
     width: 100%;
+    height: 100%;
     border-radius: 15px;
 }
 .about-col-2{
@@ -100,8 +140,9 @@ p{
 }
 .sub-title{
     font-size: 3rem;
+    font-family: 'Yeseva One', serif;
     font-weight: 600;
-    color: #fff;
+    color: rgb(103, 151, 103);
 }
 .about-col-2 p{
     margin-top: 20px;
@@ -144,6 +185,7 @@ p{
 .tab-contents{
     display: none;
     margin: 60px;
+    float: left;
 }
 
 .tab-contents.active-tab{
@@ -168,6 +210,7 @@ p{
 }
 .work img{
     width: 100%;
+    height: 100%;
     border-radius: 10px;
     display: block;
 }
@@ -286,44 +329,72 @@ form .btn2{
     margin-top: 20px;
     cursor: pointer;
 }
-
+#scrollToTop{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color:  rgb(103, 151, 103);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+#scrollToTop .fas{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+.copyright p{
+    display: flex;
+    justify-content: center;
+}
+i{
+    padding: 0 10px 20px;
+}
 /* ----------CSS for small screens----------- */
 
-nav .fa-solid{
+nav .fas{
     display: none;
 }
 
 
 @media only screen and (max-width: 600px){
-    .background{
-    width: 80%;
-    height: 100%;
-    border-radius: 50%;
+.background{
+    display: none;
+}
+.header-text p{
+    font-size: 1.3rem;
 }
 
-   .header-text{
-    margin-top: 100%;
-    font-size: 1.2rem;
-}
-
-   .header-text h1{
+.header-text h1{
     font-size: 2rem;
 }
-   nav .fa-solid{
+.header-text span{
+    font-size: 2.6rem;
+}
+.container .fas{
     display: block;
     font-size: 2rem;
+    float: right;
 }
-nav ul{
-    background: rgb(103, 151, 103);
+#sidemenu{
     position: fixed;
     top: 0;
     right: 0;
     width: 200px;
     height: 100vh;
     padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
 }
 nav ul li{
     display: block;
-    flex-direction: column;
+    margin: 25px;
 }
+#about-me{
+    margin: 0px;
+}
+
 }
